@@ -349,7 +349,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | Forest Music`,"http://twitch.tv/Forest Music")
+client.user.setGame(`Aplay | Forest Music`,"http://twitch.tv/Forest Music")
 client.user.setStatus("dnd")
 });
 
