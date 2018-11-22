@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "A";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -317,15 +317,16 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .addField('Play', 'لتشغيل اغنية')
+        .addField('Join', 'دخول رومك الصوتي')
+        .addField('Disconnect', 'الخروج من رومك الصوتي')
+        .addField('Skip', 'تخطي الأغنية')
+        .addField('Pause', 'ايقاف الاغنية مؤقتا')
+        .addField('Resume', 'تكملة الاغنية')
+        .addField('Queue', 'اظهار قائمة التشغيل')
+        .addField('Np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('Repart','لأعادة الاغنية')
+        .setFooter('(General_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
@@ -349,7 +350,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Aplay | Forest Music`,"http://twitch.tv/Forest Music")
+client.user.setGame(`1play | Verse Music`,"http://twitch.tv/Forest Music")
 client.user.setStatus("dnd")
 });
 
